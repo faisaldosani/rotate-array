@@ -30,4 +30,10 @@ def rotate(array):
         for j in range(n):
             rotated[j][n-i-1] = array[i][j]
     return rotated
-        
+
+# 90 degrees
+rotated1 = rotate(array)
+print rotated1
+# another 90, so 180 in total
+rotated2 = rotate(rotated1)
+print rotated2         
