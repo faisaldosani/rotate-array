@@ -4,6 +4,7 @@ rotate-array
 What we want to do is rotate a N x N matrix
 The way I kind of imagine this is basically transposing a row in the array into a column.
 
+```
 [[ 0, 1, 2, 3]
 
  [ 4, 5, 6, 7]
@@ -11,7 +12,7 @@ The way I kind of imagine this is basically transposing a row in the array into 
  [ 8, 9,10,11]
 
  [12,13,14,15]]
- 
+```
 We want the first row to transpose into the last column:
 0
 1
@@ -29,7 +30,8 @@ Same for the second row etc..:
 7,3
 
 We can iterate through the matrix and do the transposition via the following:
-rotated[j][n-i-1] = array[i][j]
+
+`rotated[j][n-i-1] = array[i][j]`
 
 The Row in the new matrix is the Col(j) of the old matrix
 An example:
